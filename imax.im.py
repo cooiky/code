@@ -21,8 +21,7 @@ def get_mysql_conn():
     conn = None
     
     try:
-        conn = MySQLdb.connect(host="localhost",user="cooiky",passwd="123heroleader",db="cooiky_720pim",charset="utf8")
-        #conn = MySQLdb.connect(host="localhost",user="root",passwd="wangqiang",db="720pim",charset="utf8")
+        conn = MySQLdb.connect(host="localhost",user="dbuser",passwd="dbpassword",db="dbname",charset="utf8")
     except MySQLdb.Error,e:
         print 'Mysql Error %d: %s' % (e.args[0], e.args[1])
         sys.exit(1)
