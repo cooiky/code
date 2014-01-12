@@ -16,3 +16,5 @@ php_parse_torrent.php php解析BT种子信息
 mysql_backup.sh mysql数据库备份脚本
 
 curl.php curl demo
+
+opreate_file.php 文件读取、写入、删除
