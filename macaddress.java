@@ -29,6 +29,9 @@ public static String getMacAddress() throws Exception {
     System.out.println("line " + line);
     if (line == null)
       break;
+      
+    if (line.contains("DUID"))
+      continue;
 
     Matcher m = p.matcher(line);
     if (m.find()) {
